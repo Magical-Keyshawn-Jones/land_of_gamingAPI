@@ -1,1 +1,1 @@
-web: gunicorn -k uvicorn.workers.UvicornWorker --log-level debug index:server --workers 1
+web: gunicorn 4 -k 4 uvicorn.workers.UvicornWorker index:server
