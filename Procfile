@@ -1,1 +1,1 @@
-web: gunicorn -w 4 -k uvicorn.workers.UvicornWorker index:server
+uvicorn index:server  --reload --host 0.0.0.0 --port 8000
