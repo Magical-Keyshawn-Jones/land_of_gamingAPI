@@ -1,1 +1,1 @@
-uvicorn index:server --host 0.0.0.0 --port 8000
+web: gunicorn -k uvicorn.workers.UvicornWorker --log-level debug index:server --workers 1
